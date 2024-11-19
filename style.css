@@ -85,10 +85,6 @@ picture img {
     object-fit: cover;
 }
 
-.main-image {
-  width: 100%;
-}
-
 .main-signup {
     margin: calc(40rem/16) calc(24rem/16);
     font-family: 'Roboto', sans-serif;
@@ -108,11 +104,41 @@ picture img {
     list-style: none;
     max-width: 80%;
     padding: 0;
+    margin-bottom: calc(40rem/16);
 }
 
 .feature-list li {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='21' height='21' viewBox='0 0 21 21'%3E%3Cg fill='none'%3E%3Ccircle cx='10.5' cy='10.5' r='10.5' fill='%23FF6155'/%3E%3Cpath stroke='%23FFF' stroke-width='2' d='M6 11.381 8.735 14 15 8'/%3E%3C/g%3E%3C/svg%3E");
     background-repeat: no-repeat;
     padding-left: calc(33rem/16);
-    /* list-style-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='21' height='21' viewBox='0 0 21 21'%3E%3Cg fill='none'%3E%3Ccircle cx='10.5' cy='10.5' r='10.5' fill='%23FF6155'/%3E%3Cpath stroke='%23FFF' stroke-width='2' d='M6 11.381 8.735 14 15 8'/%3E%3C/g%3E%3C/svg%3E"); */
+    margin-bottom: calc(15rem/16);
+}
+
+.email-input input{
+  margin-top: 0.5rem;
+  margin-bottom: calc(24rem/16);
+  display: block;
+  width: 92%;
+  padding: 1rem 0 1rem calc(24rem/16);
+  border-radius: 8px;
+  border-color: #D8D8D8;
+}
+
+.email-input label {
+  font-size: calc(12rem/16);
+  color: #242742;
+  font-weight: 800;
+}
+
+.submit-form input {
+  width: 95%;
+  background-color: #242742;
+  color: white;
+  padding: calc(18rem/16) 0 calc(14rem/16) 0;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+.submit-form {
+  text-align: center;
 }
