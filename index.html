@@ -16,10 +16,19 @@
 <body>
   <main>
     <div class="newsletter-card">
-      <picture>
+      <picture class="main-image">
         <source media="(max-width: 35rem)" srcset="assets/images/illustration-sign-up-mobile.svg">
         <img src="assets/images/illustration-sign-up-desktop.svg">
       </picture>
+      <div class="thank-you hidden">
+        <div class="main-part-thank-you">
+          <img class="success-icon" src="assets/images/icon-success.svg">
+          <h2 class="thank-you-heading">Thanks for subscribing</h2>
+          <p class="thank-you-description">A confirmation email has been sent to <strong>ash@loremcompany.com</strong>. 
+            Please open it and click the button inside to confirm your subscription.</p>
+        </div>
+        <button class="dismiss-message">Dismiss message</button>
+      </div>
       <div class="main-signup">
         <h2 class="stay-updated-heading">Stay updated!</h2>
         <p class="stay-updated-description">Join 60,000+ product managers receiving monthly updates on:</p>
@@ -31,7 +40,7 @@
         <form>
           <div class="email-input">
             <label for="email-address">Email address</label>
-            <input type="text" id="email-address" name="email-address" placeholder="email@company.com">
+            <input class="" type="text" id="email-address" name="email-address" placeholder="email@company.com">
           </div>
           <div class="submit-form">
             <input type="submit" value="Subscribe to monthly newsletter" accesskey="s">
@@ -43,8 +52,7 @@
 
   <!-- Thanks for subscribing!
 
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
+  
 
   Dismiss message -->
 </body>

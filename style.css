@@ -80,7 +80,7 @@ main {
     margin: 0 auto;
 }
 
-picture img {
+.main-image img {
     min-width: 100%;
     object-fit: cover;
 }
@@ -91,7 +91,7 @@ picture img {
     color: #242742;
 }
 
-.stay-updated-heading {
+.stay-updated-heading, .thank-you-heading {
     font-size: calc(40rem/16);
     margin-bottom: 1.5rem;
 }
@@ -124,13 +124,18 @@ picture img {
   border-color: #D8D8D8;
 }
 
+.email-input input:focus {
+  outline: none;
+}
+
 .email-input label {
   font-size: calc(12rem/16);
   color: #242742;
   font-weight: 800;
 }
 
-.submit-form input {
+.submit-form input, .dismiss-message {
+  border: none;
   width: 95%;
   background-color: #242742;
   color: white;
@@ -141,4 +146,111 @@ picture img {
 
 .submit-form {
   text-align: center;
+}
+
+.success-icon {
+  margin-bottom: calc(40rem/16);
+}
+
+.thank-you {
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  color: #242742;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: calc(24rem/16);
+  margin-left: calc(24rem/16);
+}
+
+.main-part-thank-you {
+  margin-top: calc(60rem/16);
+}
+
+.dismiss-message {
+  align-self: center;
+  margin-bottom: calc(40rem/16);
+}
+
+
+@media (min-width: 35rem) {
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #36384D;
+  }
+  
+  .newsletter-card {
+    background-color: white;
+    border-radius: 40px;
+    display: flex;
+    overflow: hidden;
+    max-width: calc(928rem/16);
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  
+  .main-image {
+    margin: calc(24rem/16) calc(24rem/16) calc(24rem/16) 0;
+    min-width: calc(200rem/16);
+  }
+
+  .main-signup, .thank-you {
+    margin: calc(20rem/16) calc(64rem/16) calc(20rem/16) calc(64rem/16);
+  }
+
+  .feature-list {
+    max-width: 100%;
+  }
+
+  .submit-form input {
+    width: 100%;
+  }
+
+  .main-image img {
+    object-fit: cover;
+  }
+
+  .stay-updated-heading {
+    font-size: calc(56rem/16);
+  }
+
+  .submit-form input:active, .submit-form input:hover {
+    background-image: linear-gradient(45deg, #FF527B, #FF6A3A);
+  }
+  
+  .email-input .error{
+    border: 1px solid #FF6155;
+    background-color: rgba(255, 97, 85, 0.15);
+  }
+  
+  .email-input .error::placeholder {
+    color: #FF6155;
+  }
+
+  .thank-you {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .thank-you-card {
+    max-height: calc(520rem / 16);
+    max-width: calc(504rem / 16);
+  }
+
+  .main-part-thank-you {
+    margin-top: 2rem;
+  }
+
+  .dismiss-message {
+    margin-top: calc(40rem/16);
+    min-width: 100%;
+  }
+}
+
+.hidden {
+  display: none;
 }
