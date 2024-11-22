@@ -8,6 +8,7 @@
 
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
   <link rel="stylesheet" href="style.css">
+
   <script src="main.js" async></script>
 
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
@@ -20,16 +21,16 @@
         <source media="(max-width: 35rem)" srcset="assets/images/illustration-sign-up-mobile.svg">
         <img src="assets/images/illustration-sign-up-desktop.svg">
       </picture>
-      <div class="thank-you hidden">
+      <div class="thank-you hidden" id="thank-you">
         <div class="main-part-thank-you">
           <img class="success-icon" src="assets/images/icon-success.svg">
           <h2 class="thank-you-heading">Thanks for subscribing</h2>
-          <p class="thank-you-description">A confirmation email has been sent to <strong>ash@loremcompany.com</strong>. 
+          <p class="thank-you-description">A confirmation email has been sent to <strong><span id="email-property">ash@loremcompany.com</span></strong>. 
             Please open it and click the button inside to confirm your subscription.</p>
         </div>
-        <button class="dismiss-message">Dismiss message</button>
+        <button class="dismiss-message" id="dismiss-button">Dismiss message</button>
       </div>
-      <div class="main-signup">
+      <div class="main-signup" id="main-signup">
         <h2 class="stay-updated-heading">Stay updated!</h2>
         <p class="stay-updated-description">Join 60,000+ product managers receiving monthly updates on:</p>
         <ul class="feature-list">
@@ -37,13 +38,17 @@
           <li>Measuring to ensure updates are a success</li>
           <li>And much more!</li>
         </ul>
-        <form>
+        <form id="signup-form">
           <div class="email-input">
-            <label for="email-address">Email address</label>
+            <div class="email-input-labels">
+              <label for="email-address">Email address</label>
+              <label id="valid-required" class="hidden hidden2" for="email-address">Valid email required</label>
+            </div>
+            
             <input class="" type="text" id="email-address" name="email-address" placeholder="email@company.com">
           </div>
           <div class="submit-form">
-            <input type="submit" value="Subscribe to monthly newsletter" accesskey="s">
+            <input type="submit" submit-form value="Subscribe to monthly newsletter" accesskey="s">
           </div>
         </form>
       </div>

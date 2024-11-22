@@ -114,6 +114,17 @@ main {
     margin-bottom: calc(15rem/16);
 }
 
+.email-input-labels {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#valid-required {
+  color: #FF6155;
+  margin-right: 0.25rem;
+}
+
 .email-input input{
   margin-top: 0.5rem;
   margin-bottom: calc(24rem/16);
@@ -153,7 +164,7 @@ main {
 }
 
 .thank-you {
-  min-height: 100vh;
+  min-height: 70vh;
   font-family: 'Roboto', sans-serif;
   color: #242742;
   display: flex;
@@ -172,6 +183,11 @@ main {
   margin-bottom: calc(40rem/16);
 }
 
+.hidden2 {
+  display: none;
+}
+
+
 
 @media (min-width: 35rem) {
   main {
@@ -188,6 +204,7 @@ main {
     display: flex;
     overflow: hidden;
     max-width: calc(928rem/16);
+    max-height: 40rem;
     flex-direction: row-reverse;
     align-items: center;
   }
@@ -213,11 +230,13 @@ main {
     object-fit: cover;
   }
 
+  
+
   .stay-updated-heading {
     font-size: calc(56rem/16);
   }
 
-  .submit-form input:active, .submit-form input:hover {
+  .submit-form input:hover, .dismiss-message:hover {
     background-image: linear-gradient(45deg, #FF527B, #FF6A3A);
   }
   
@@ -249,6 +268,11 @@ main {
     margin-top: calc(40rem/16);
     min-width: 100%;
   }
+
+  .hidden2 {
+    display: inline;
+  }
+  
 }
 
 .hidden {
