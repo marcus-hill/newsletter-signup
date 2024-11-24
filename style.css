@@ -125,6 +125,11 @@ main {
   margin-right: 0.25rem;
 }
 
+#email-address {
+  border: 1px solid rgba(25, 24, 43, 0.25);
+  border-radius: 8px;
+}
+
 .email-input input{
   margin-top: 0.5rem;
   margin-bottom: calc(24rem/16);
